@@ -1,7 +1,7 @@
 cd Desktop/LaunchPad/HealthUp/
 node server.js<!DOCTYPE html>
 <html>
-<title>Hi</title>
+<title>Home page</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -19,9 +19,9 @@ body {font-family: "Open Sans"}
   <div class="w3-bar w3-black w3-card-2">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
     <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="#newbies" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Newbies</a>
-    <a href="#motivation" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Motivation</a>
-    <a href="#workoutdirect" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Workout Directory</a>
+    <a href="/newbies" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Newbies</a>
+    <a href="/motivation" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Motivation</a>
+    <a href="/workoutdirect" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Workout Directory</a>
     <a href="/register" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Log In</a>
     <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
@@ -32,9 +32,9 @@ body {font-family: "Open Sans"}
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="/" class="w3-bar-item w3-button w3-padding-large">Home</a>
-  <a href="#newbies" class="w3-bar-item w3-button w3-padding-large">Newbies</a>
-  <a href="#motivation" class="w3-bar-item w3-button w3-padding-large">Motivation</a>
-  <a href="#workoutdirect" class="w3-bar-item w3-button w3-padding-large">Workout Directory</a>
+  <a href="/newbies" class="w3-bar-item w3-button w3-padding-large">Newbies</a>
+  <a href="/motivation" class="w3-bar-item w3-button w3-padding-large">Motivation</a>
+  <a href="/workoutdirect" class="w3-bar-item w3-button w3-padding-large">Workout Directory</a>
   <a href="/register" class="w3-bar-item w3-button w3-padding-large">Log In</a>
 </div>
 
@@ -47,12 +47,27 @@ body {font-family: "Open Sans"}
 <!-- Blog entries -->
 <div class="w3-col l8 s12">
 
-<!-- Homw entry -->
+<!-- Home entry -->
 <div class="w3-container w3-white w3-margin w3-padding-large">
   <div class="w3-center">
     <h3></h3>
-      <h5>Welcome to healthUP <span class="w3-opacity">If you're new to working out, please visit the Newbies page.</span></h5>
+      <h3>Welcome to healthUP <span class="w3-opacity"></h3>
+    </span>
   </div>
+
+  <div class="w3-container w3-white w3-margin w3-padding-large">
+    <div class="w3-center">
+      <h3></h3>
+        <h4>Site Description <span class="w3-opacity"></h4>
+        <p>
+          healthUP is a free resource for anyone that is interested in working out.</br>
+        </br>
+          If you are new to working out you can visit the newbies page to find out on how to get started!</br>
+          If you need motivation to get your butt off the couch, you can visit the motivation page </br>
+          If you'd like to view a library of exercises,you can visit the workout directory page. </br>
+        </p>
+      </span>
+    </div>
 
     <!-- END About/Intro Menu -->
     </div>

@@ -24,11 +24,16 @@ app.get('/', function (req, res) {
   res.sendFile(process.cwd() + '/home.html')
 })
 
-app.get('/test1', function (req, res) {
-  userModel.find(function (err, users) {
-    if(err) return console.error(err);
-    res.send(users)
-  })
+app.get('/motivation', function (req, res) {
+  res.sendFile(process.cwd() + '/motivation.html')
+})
+
+app.get('/newbies', function (req, res) {
+  res.sendFile(process.cwd() + '/newbies.html')
+})
+
+app.get('/workoutdirect', function (req, res) {
+  res.sendFile(process.cwd() + '/workoutdirect.html')
 })
 
 app.get('/register', function (req, res) {
